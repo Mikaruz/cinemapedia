@@ -7,7 +7,7 @@ final actorsByMovieProvider =
         (ref) {
   final actorsRepository = ref.watch(actorRepositoryProvider);
 
-  return ActorsByMovieNotifier(getActors: actorsRepository.getActorsBtMovie);
+  return ActorsByMovieNotifier(getActors: actorsRepository.getActorsByMovie);
 });
 
 typedef GetActorsCallback = Future<List<Actor>> Function(String movieId);
